@@ -1,0 +1,36 @@
+:root {
+    --cursor-classic-windows: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 4 L24 14 L16 16 L14 24 Z' fill='black' stroke='white' stroke-width='2'/%3E%3C/svg%3E"), auto;
+    --cursor-classic-mac: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M4 4 L24 14 L16 16 L14 24 Z' fill='white' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), auto;
+    --cursor-pixel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect x='0' y='0' width='32' height='32' fill='black'/%3E%3Crect x='2' y='2' width='28' height='28' fill='white'/%3E%3C/svg%3E"), auto;
+    --cursor-winxp-default: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M6 2 L22 18 L14 18 L14 26 L6 2 Z' fill='white' stroke='black' stroke-width='1'/%3E%3C/svg%3E"), auto;
+    --cursor-winxp-pointer: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M8 5 L16 18 L20 15 L23 25 L25 24 L22 14 L26 14 Z' fill='white' stroke='black' stroke-width='1'/%3E%3C/svg%3E"), pointer;
+    --cursor-winxp-text: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M16 4 L12 28 M10 6 L22 6' stroke='white' stroke-width='4'/%3E%3Cpath d='M16 4 L12 28 M10 6 L22 6' stroke='black' stroke-width='2'/%3E%3C/svg%3E"), text;
+}
+
+/* Global cursor for the entire site */
+* {
+    cursor: var(--cursor-winxp-default) !important;
+}
+
+/* Specific hover states - these will override the global cursor */
+a, button, .sidebar-button, .desktop-icon, .window-title-bar, 
+.window-controls button, input[type="submit"], input[type="button"] {
+    cursor: var(--cursor-winxp-pointer) !important;
+}
+
+input, textarea {
+    cursor: var(--cursor-winxp-text) !important;
+}
+
+/* Changeable cursor classes */
+.cursor-windows {
+    cursor: var(--cursor-classic-windows) !important;
+}
+
+.cursor-mac {
+    cursor: var(--cursor-classic-mac) !important;
+}
+
+.cursor-pixel {
+    cursor: var(--cursor-pixel) !important;
+}

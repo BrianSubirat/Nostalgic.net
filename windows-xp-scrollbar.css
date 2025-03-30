@@ -1,0 +1,49 @@
+/* Windows XP Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border: 1px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #ebf4fa 0%, #bde0fa 50%, #76b9f0 51%, #6baff0 100%);
+    border: 1px solid #b6b6b6;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #f0f8ff 0%, #cae7fe 50%, #92cbf6 51%, #82bff6 100%);
+}
+
+::-webkit-scrollbar-button {
+    background-color: #f0f0f0;
+    border: 1px solid #d4d4d4;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M8 5 L12 9 L4 9 Z' fill='%23777'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M8 11 L4 7 L12 7 Z' fill='%23777'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M5 8 L9 4 L9 12 Z' fill='%23777'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M11 8 L7 12 L7 4 Z' fill='%23777'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebTimeCapsule - Blast from the Internet Past!</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌐</text></svg>">
+    <link rel="stylesheet" href="styles/nostalgic-theme.css">
+    <link rel="stylesheet" href="styles/classic-cursors.css">
+    <link rel="stylesheet" href="styles/windows-xp-scrollbar.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "anime": "https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.es.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-button">Home</div>
+        <div class="sidebar-button">Classic Games</div>
+        <div class="sidebar-button">Old YouTube</div>
+        <div class="sidebar-button">Internet Relics</div>
+        <div class="sidebar-button">Guestbook</div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-buttons">
+            <div class="mobile-nav-button">Home</div>
+            <div class="mobile-nav-button">Games</div>
+            <div class="mobile-nav-button">YouTube</div>
+            <div class="mobile-nav-button">Relics</div>
+            <div class="mobile-nav-button">Guestbook</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <marquee>Welcome to WebTimeCapsule! 🌐✨ Relive the Internet's Golden Age! 🕹️</marquee>
+        
+        <img src="assets/retro-banner.gif" alt="Retro Banner" class="retro-banner">
+
+        <div class="content-section" id="home">
+            <h1>🌐 Welcome to WebTimeCapsule! 🚀</h1>
+            <p>A journey back to the wild west of the internet!</p>
+        </div>
+
+        <div class="content-section" id="games" style="display:none;">
+            <h2>Classic Games</h2>
+            <!-- Placeholder for game embeds -->
+        </div>
+
+        <div class="content-section" id="youtube" style="display:none;">
+            <h2>Old YouTube Classics</h2>
+            <iframe class="retro-video" src="..." frameborder="0"></iframe>
+        </div>
+
+        <div class="content-section" id="relics" style="display:none;">
+            <h2>Internet Relics</h2>
+            <!-- Nostalgic web artifacts -->
+        </div>
+
+        <div class="content-section" id="guestbook" style="display:none;">
+            <div class="guestbook">
+                <h2>WebTimeCapsule Guestbook 📝</h2>
+                <form id="guestbook-form">
+                    <input type="text" id="guest-name" placeholder="Your Name" required>
+                    <textarea id="guest-message" placeholder="Leave a message!" required></textarea>
+                    <button type="submit">Sign Guestbook</button>
+                </form>
+                <div id="guestbook-entries"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hit-counter" id="hit-counter">Visitors: 0</div>
+
+    <script type="module" src="scripts/mobile-navigation.js"></script>
+    <script type="module" src="scripts/sidebar.js"></script>
+    <script type="module" src="scripts/guestbook.js"></script>
+    <script type="module" src="scripts/youtube.js"></script>
+    <script type="module" src="scripts/windows.js"></script>
+    <script type="module" src="scripts/system.js"></script>
+    <script type="module" src="scripts/relics.js"></script>
+    <script type="module" src="scripts/games.js"></script>
+    <script type="module" src="scripts/mario-game.js"></script>
+    <script type="module" src="scripts/classic-games-additional.js"></script>
+    <script type="module" src="scripts/retro-games-extended.js"></script>
+    <script type="module" src="scripts/classic-puzzle-games.js"></script>
+    <script type="module" src="scripts/classic-videos.js"></script>
+</body>
+</html>

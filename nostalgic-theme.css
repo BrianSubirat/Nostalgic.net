@@ -1,0 +1,232 @@
+body {
+    background-color: #000033;
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    color: #00FF00;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100vh;
+    background-color: #1E90FF;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.5);
+}
+
+.sidebar-button {
+    background-color: #4169E1;
+    color: white;
+    border: 3px outset #87CEFA;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sidebar-button:hover {
+    background-color: #87CEFA;
+    border-color: white;
+}
+
+.main-content {
+    margin-left: 190px;
+    padding: 20px;
+}
+
+.hit-counter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', monospace;
+    padding: 5px;
+    border: 2px solid green;
+}
+
+.retro-banner {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border: 5px solid #FF00FF;
+}
+
+.retro-video {
+    max-width: 400px;
+    border: 5px solid #00FFFF;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.guestbook {
+    background-color: #333366;
+    padding: 20px;
+    color: #00FF00;
+}
+
+.guestbook textarea {
+    width: 100%;
+    background-color: #000033;
+    color: #00FF00;
+    border: 2px solid #00FF00;
+    font-family: 'Comic Sans MS', monospace;
+}
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000033;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+    box-shadow: inset -1px -1px #808080;
+}
+
+.start-button {
+    background-color: #000033;
+    border: 2px outset white;
+    padding: 5px 15px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.window {
+    position: absolute;
+    background-color: #C0C0C0;
+    border: 2px solid;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.window-title-bar {
+    background: linear-gradient(to right, #000080, #1084D0);
+    color: white;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop-icon {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #000033;
+    color: #00FF00;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+marquee {
+    background-color: yellow;
+    color: black;
+    font-size: 14px;
+}
+
+.relic-item {
+    background-color: #333366;
+    border: 2px solid #00FF00;
+    margin: 10px 0;
+    padding: 15px;
+    color: #00FF00;
+}
+
+.relic-item img, .relic-item iframe {
+    max-width: 100%;
+    border: 3px solid #FF00FF;
+}
+
+.relic-item a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.game-item {
+    background-color: #333366;
+    border: 2px solid #1E90FF;
+    margin: 10px 0;
+    padding: 15px;
+    color: #00FF00;
+    text-align: center;
+}
+
+.game-item canvas, .game-item div {
+    margin: 0 auto;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E90FF;
+    padding: 10px 0;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.mobile-nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+
+.mobile-nav-button {
+    background-color: #4169E1;
+    color: white;
+    border: 2px outset #87CEFA;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 18%;
+    font-size: 0.8rem;
+}
+
+.mobile-nav-button:hover {
+    background-color: #87CEFA;
+    border-color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        margin-bottom: 60px; 
+        padding: 10px;
+    }
+    
+    .hit-counter {
+        bottom: 50px;
+    }
+}
